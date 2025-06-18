@@ -1,0 +1,217 @@
+ body {
+    width: 100%;
+    height: auto;
+
+ }
+ :root {
+  --accent: rgba(134, 209, 69, 0.281);
+  --dark-text: #191954;
+  --light-text: #ffffff;
+  --hover: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+ object-fit: cover;
+  z-index: -1;
+}
+
+.header-complete {
+  padding: 80px 20px 20px;
+  background-color: var(--accent);
+  text-align: center;
+}
+
+#header {
+  border: 5px solid rgba(191, 191, 180, 0.696);
+  border-radius: 50% 50% 0 0;
+  padding: 20px;
+  background: linear-gradient(90deg, rgb(134, 144, 148), rgba(87, 199, 133, 1), rgba(237, 221, 83, 1));
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-text);
+}
+
+.para {
+  font-size: 1.2rem;
+  color: navy;
+  margin-top: 10px;
+}
+
+#info {
+  background-color: var(--accent);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 20px;
+}
+
+#info h2 {
+  font-size: 2rem;
+}
+
+#info p {
+  color: #f3f2f5;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+#skills {
+  display: flex;
+  gap: 40px;
+  background-color: rgba(129, 13, 230, 0.281);
+  padding: 40px 40px;
+}
+
+.css, .java {
+  width: 40%;
+}
+
+.css img, .java img {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 0 auto;
+}
+
+.css img {
+    width: 60%;
+    height: 40%;
+}
+
+.java img {
+    width: 60%;
+}
+
+.lorem {
+  text-align: center;
+}
+
+.lorem h2 {
+  font-size: 2rem;
+}
+
+.lorem p {
+  color: var(--light-text);
+  font-size: 1rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+    background-color: rgba(239, 2, 2, 0.281);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#contact p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact input {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(43, 224, 43);
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  #background-video {
+    width: 100%;
+    height: 100%;
+  }
+  .header h1 {
+    font-size: 4rem;
+  }
+
+  .para {
+    font-size: 1.8rem;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .lorem h2 {
+    font-size: 2rem;
+  }
+
+  .lorem p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 341px){
+  #skills {
+    display: grid;
+    justify-items: center;
+    
+  }
+  .lorem h2 {
+    justify-self: center;
+  }
+  .java img, .css img {
+    width: 80%;
+   
+  }
+}
